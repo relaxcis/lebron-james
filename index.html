@@ -1,61 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeBron James - Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Леброн Джеймс - Официальное Портфолио</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: #fff;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            color: #c00;
+            margin-bottom: 10px;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .stats-grid {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        .stat-item {
+            width: 30%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">LJ</a>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#stats">Stats</a></li>
-                <li><a href="#career">Career</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#business">Business</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="theme-toggle">🌙</button>
-        </div>
-    </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-video">
-            <video autoplay muted loop>
-                <source src="videos/lebron-hero.mp4" type="video/mp4">
-            </video>
-            <div class="video-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <h1 class="hero-title">LEBRON JAMES</h1>
-            <p class="hero-subtitle">The King • 4× NBA Champion • All-Time Leading Scorer</p>
-            <a href="#achievements" class="cta-button">Explore Legacy</a>
-        </div>
-        <div class="scroll-indicator"></div>
-    </section>
-
-    <section id="achievements" class="achievements">
+    <header>
         <div class="container">
-            <h2 class="section-title">Career Achievements</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-number">4×</div>
-                    <div class="achievement-title">NBA Champion</div>
-                    <div class="achievement-years">2012, 2013, 2016, 2020</div>
+            <h1>KING JAMES</h1>
+            <nav>
+                <a href="#about">Обо мне</a>
+                <a href="#career">Карьера и Награды</a>
+                <a href="#foundation">Фонд</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <img src="lebron-placeholder.jpg" alt="Фото Леброна Джеймса" style="max-width: 300px; border-radius: 50%;">
+        <h1>ЛЕБРОН ДЖЕЙМС</h1>
+        <p>Четырехкратный Чемпион НБА | Четырехкратный MVP НБА</p>
+        <p>Игрок "Лос-Анджелес Лейкерс" | Предприниматель | Филантроп</p>
+    </div>
+
+    <div class="container">
+
+        <section id="about">
+            <h2>🏀 Король на Площадке</h2>
+            <p>Леброн Рэймон Джеймс, известный как "Король Джеймс" (King James), является одним из величайших баскетболистов всех времен. Его карьера охватывает более двух десятилетий, включая выступления за "Кливленд Кавальерс", "Майами Хит" и "Лос-Анджелес Лейкерс".</p>
+            <p>Помимо спортивных достижений, Леброн активно занимается благотворительностью через свой фонд **LeBron James Family Foundation**, фокусируясь на образовании и поддержке детей из неблагополучных районов.</p>
+        </section>
+
+        <section id="career">
+            <h2>🏆 Основные Достижения</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>4x</h3>
+                    <p>Чемпион НБА</p>
+                </div>
+                <div class="stat-item">
+                    <h3>4x</h3>
+                    <p>MVP НБА</p>
+                </div>
+                <div class="stat-item">
+                    <h3>4x</h3>
+                    <p>MVP Финала НБА</p>
+                </div>
+                <div class="stat-item">
+                    <h3>20x</h3>
+                    <p>Участие в Матче Всех Звезд</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Рекорд</h3>
+                    <p>Лидер НБА по набранным очкам за карьеру</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Олимпийское</h3>
+                    <p>2x Золото Олимпийских игр</p>
                 </div>
             </div>
-        </div>
-    </section>
+            <p style="text-align: center; margin-top: 20px;">*Полный список наград доступен по запросу.</p>
+        </section>
 
-      <script src="js/main.js"></script>
+        <section id="foundation">
+            <h2>🤝 LeBron James Family Foundation</h2>
+            <p>Миссия фонда — позитивно влиять на жизнь детей и семей в родном городе Леброна, Акрон, штат Огайо. Одним из ключевых проектов является **I PROMISE School** — инновационная школа, призванная дать надежду и образование нуждающимся.</p>
+            <a href="#" style="color: #c00; font-weight: bold;">Узнать больше и поддержать фонд</a>
+        </section>
+
+        <section id="contact">
+            <h2>📧 Свяжитесь с Командой</h2>
+            <p>По вопросам сотрудничества, медиазапросов или партнерства, пожалуйста, свяжитесь с представителями Леброна:</p>
+            <p><strong>Email:</strong> <a href="mailto:contact@kingjames.com">contact@kingjames.com</a></p>
+            <p><strong>Социальные сети:</strong></p>
+            <ul>
+                <li><a href="#" target="_blank">Twitter/X</a></li>
+                <li><a href="#" target="_blank">Instagram</a></li>
+                <li><a href="#" target="_blank">Facebook</a></li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 King James. Все права защищены. | Дизайн Портфолио</p>
+    </footer>
+
 </body>
+</html>
 
 </html>
+
